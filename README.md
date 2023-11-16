@@ -109,14 +109,14 @@ Atlas Labs would like some answers on its employee demographics and performance.
 
 * **Focus on Employee (Demographics) age and gender**
     * Create Age distribution of employees : `=Table.AddColumn(#"Changed Type", "AgeBins", each if [Age] >= 50 then "50>" else if [Age] >= 40 then "40-49" else if [Age] >= 30 then "30-39" else if [Age] >= 20 then "20-29" else "<20")`
-        ![Analyzing departments and Job Roles](/Images/3.png)
+        ![Demographics](/Images/3.png)
 * **Focus on Marital Status and Ethnicity**
     * Count Employees by marital status
     * create a measure, AverageSalary : `AverageSalary = AVERAGE(DimEmployee[Salary])`
-        ![Analyzing departments and Job Roles](/Images/4.png)
+        ![Marital Status and Ethnicity](/Images/4.png)
 * **performance of the employees based on yearly performance reviews**
     * slicer with employee full name which has single select and search enabled to show selected employee start date last review date and next review date
-        ![Analyzing departments and Job Roles](/Images/5.png)
+        ![performance reviews](/Images/5.png)
     * Individual review ratings : create satisfaction metrics inside the \_Measures table and visualise them
 
     ```
@@ -140,9 +140,21 @@ Atlas Labs would like some answers on its employee demographics and performance.
         [RelationshipSatisfaction], DimSatisfiedLevel[SatisfactionID])
     )
     ```
-    ![Analyzing departments and Job Roles](/Images/6.png)
+    ![performance reviews](/Images/6.png)
 
-### Step 3: Bringing it all together
+### Step 3: Bringing it all together (Creating a cohesive report)
 
 It’s almost time to deliver report to the key stakeholders at Atlas Labs. In this final chapter, We will focus on delivering insights on attrition and what factors affect employee retention.
 Finally, we will clean up the overall layout of the report to create a user-friendly, clean, and branded experience.
+
+* **Understanding attrition**
+    * Employee attrition, also known as employee churn or turnover, refers to employees leaving an organization for any reason (voluntary or involuntary). 
+    ![Understanding attrition](/Images/7.png)
+    * Other Factors affects attrition
+    ![Understanding attrition](/Images/8.png)
+* **Layout design improvement**
+Applying color and brand for final dashboard 
+![final dashboard](/Images/dashboard1.png)
+![final dashboard](/Images/dashboard2.png)
+![final dashboard](/Images/dashboard3.png)
+![final dashboard](/Images/dashboard4.png)
