@@ -107,10 +107,13 @@ This will enable every department to plan for new hiring requests in the future.
 Using your Power BI skills to extract insights using DAX and learn how to build custom visuals on report.
 Atlas Labs would like some answers on its employee demographics and performance.
 
-* **Focus on employee (Demographics) age and gender**
+* **Focus on Employee (Demographics) age and gender**
     * Create Age distribution of employees : `=Table.AddColumn(#"Changed Type", "AgeBins", each if [Age] >= 50 then "50>" else if [Age] >= 40 then "40-49" else if [Age] >= 30 then "30-39" else if [Age] >= 20 then "20-29" else "<20")`
-    * ![Analyzing departments and Job Roles](/Images/2.png)
-        
+    ![Analyzing departments and Job Roles](/Images/3.png)
+* **Focus on Marital Status and Ethnicity**
+    * Count Employees by marital status
+    * create a measure, AverageSalary : `AverageSalary = AVERAGE(DimEmployee[Salary])`
+    ![Analyzing departments and Job Roles](/Images/4.png)
 
 
 ### Step 3: Bringing it all together
