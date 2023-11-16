@@ -1,0 +1,21 @@
+{
+  "name": "",
+  "isOrdered": true,
+  "folders": {
+    "Dataset": {
+      "name": "Dataset",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "Images": {
+      "name": "Images",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    }
+  },
+  "files": {
+    "README": 0
+  }
+}
