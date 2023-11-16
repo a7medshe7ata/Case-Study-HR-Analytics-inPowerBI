@@ -102,7 +102,6 @@ looking into the typical roles department managers are hiring into the organizat
 This will enable every department to plan for new hiring requests in the future.
 ![Analyzing departments and Job Roles](/Images/2.png)
 
-<br>
 ### Step 2: Analyzing Demographics and Performance
 
 Using your Power BI skills to extract insights using DAX and learn how to build custom visuals on report.
