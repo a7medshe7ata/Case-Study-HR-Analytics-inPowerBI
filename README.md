@@ -83,7 +83,7 @@ RETURN
     * Count employees : `TotalEmployees = DISTINCTCOUNT(DimEmployee[EmployeeID]) `
     * Count Active Employees : `ActiveEmployee = CALCULATE([TotalEmployees], DimEmployee[Attrition] = "No")`
     * Count Inactive Employees : `InactiveEmployee = CALCULATE([TotalEmployees], DimEmployee[Attrition] = "Yes")`
-    * Calculate Attrition Rate : `% Attrition Rate = [InactiveEmployee]/[TotalEmployees]`
+    * Calculate Attrition Rate`% Attrition Rate = [InactiveEmployee]/[TotalEmployees]`
 * Calculate Hiring trends over time to see where they have had the biggest growth in employees
 
 ```
@@ -96,6 +96,13 @@ CALCULATE (
 
 ![Hiring trends over time](/Images/1.png)
 
+
+* **Analyzing departments and Job Roles**
+looking into the typical roles department managers are hiring into the organization.
+This will enable every department to plan for new hiring requests in the future.
+![Analyzing departments and Job Roles](/Images/2.png)
+
+<br>
 ### Step 2: Analyzing Demographics and Performance
 
 Using your Power BI skills to extract insights using DAX and learn how to build custom visuals on report.
